@@ -2,21 +2,29 @@ version: 2
 
 jobs:
   test:
+    docker: # FIXME: Python3系に移行したらイメージを変更すべき
+      - image: circleci/python:2.7.13
     steps:
       - run:
           name: test
           command: echo TEST
   echo_a:
+    docker: # FIXME: Python3系に移行したらイメージを変更すべき
+      - image: circleci/python:2.7.13
     steps:
       - run:
           name: echo
           command: echo ALFARSHEAR
   echo_b:
+    docker: # FIXME: Python3系に移行したらイメージを変更すべき
+      - image: circleci/python:2.7.13
     steps:
       - run:
           name: echo
           command: echo BAROQUE
   echo_c:
+    docker: # FIXME: Python3系に移行したらイメージを変更すべき
+      - image: circleci/python:2.7.13
     steps:
       - run:
           name: echo
