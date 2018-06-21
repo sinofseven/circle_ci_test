@@ -18,7 +18,7 @@ jobs:
           command: echo CROSSBELL
 
 workflows:
-  versions: 2
+  version: 2
   message_a:
     jobs:
       - wait_approve_a:
