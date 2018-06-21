@@ -2,17 +2,17 @@ version: 2
 
 jobs:
   echo_a:
-    step:
+    steps:
       - run:
           name: echo
           command: echo ALFARSHEAR
   echo_b:
-    step:
+    steps:
       - run:
           name: echo
           command: echo BAROQUE
   echo_c:
-    step:
+    steps:
       - run:
           name: echo
           command: echo CROSSBELL
