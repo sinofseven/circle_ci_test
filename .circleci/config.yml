@@ -36,37 +36,37 @@ workflows:
               only: /v([0-9]+\.){2}[0-9]+/
           requires:
             - wait_approve_a
-  message_b:
-    jobs:
-      - wait_approve_b:
-          type: approval
-          filters:
-            branch:
-              ignore: /.*/
-            tags:
-              only: /v([0-9]+\.){2}[0-9]+/
-      - echo_b:
-          filters:
-            branch:
-              ignore: /.*/
-            tags:
-              only: /v([0-9]+\.){2}[0-9]+/
-          requires:
-            - wait_approve_b
-  message_c:
-    jobs:
-      - wait_approve_c:
-          type: approval
-          filters:
-            branch:
-              ignore: /.*/
-            tags:
-              only: /v([0-9]+\.){2}[0-9]+/
-      - echo_c:
-          filters:
-            branch:
-              ignore: /.*/
-            tags:
-              only: /v([0-9]+\.){2}[0-9]+/
-          requires:
-            - wait_approve_c
+#  message_b:
+#    jobs:
+#      - wait_approve_b:
+#          type: approval
+#          filters:
+#            branch:
+#              ignore: /.*/
+#            tags:
+#              only: /v([0-9]+\.){2}[0-9]+/
+#      - echo_b:
+#          filters:
+#            branch:
+#              ignore: /.*/
+#            tags:
+#              only: /v([0-9]+\.){2}[0-9]+/
+#          requires:
+#            - wait_approve_b
+#  message_c:
+#    jobs:
+#      - wait_approve_c:
+#          type: approval
+#          filters:
+#            branch:
+#              ignore: /.*/
+#            tags:
+#              only: /v([0-9]+\.){2}[0-9]+/
+#      - echo_c:
+#          filters:
+#            branch:
+#              ignore: /.*/
+#            tags:
+#              only: /v([0-9]+\.){2}[0-9]+/
+#          requires:
+#            - wait_approve_c
