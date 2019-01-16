@@ -12,6 +12,7 @@ jobs:
       - run:
           name: second
           command: echo "second"
+          when: on_fail
       - run:
           name: third
           command: echo "third"
