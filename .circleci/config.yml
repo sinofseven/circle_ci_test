@@ -9,6 +9,7 @@ jobs:
           name: first
           command: |
             echo "first"
+            exit 1
       - run:
           name: second
           command: echo "second"
